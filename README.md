@@ -1,20 +1,19 @@
 ## Simple Spectral Graph Convolutional
 
 ### Overview
-This repo contains an example implementation of the Simple Spectral Graph Convolutional
-(S^2GC) model This code is based on SGC
+This repo contains an example implementation of the Simple Spectral Graph Convolutional (S^2GC) model.
+This code is based on SGC. We will update the code in Text Classification and Node Clustering latter. 
 
-SGC removes the nonlinearities and collapes the weight matrices in Graph Convolutional Networks (GCNs) and is essentially a linear model. 
-For an illustration, ![](https://github.com/Tiiiger/SimpleGraphConvolution/blob/master/model.jpg "SGC")
+SGC removes the nonlinearities and collapes the weight matrices in Graph Convolutional Networks (GCNs) and is essentially a linear model. However, it also cannot beat GCNs in most benchmarks. S^2GC is a new baseline method for GCNs and downstream applications.
 
-SGC achieves competitive performance while saving much training time. For reference, on a GTX 1080 Ti,
+S^2GC achieves competitive performance while saving much training time, basically the computational cost is very close to SSGC. For reference, on a GTX 1080 Ti,
 
-Dataset | Metric | Training Time 
-:------:|:------:|:-----------:|
-Cora    | Acc: 81.0 %     | 0.13s
-Citeseer| Acc: 71.9 %     | 0.14s
-Pubmed  | Acc: 78.9 %     | 0.29s
-Reddit  | F1:  94.9 %     | 2.7s
+Dataset | Metric |
+:------:|:------:|
+Cora    | Acc: 83.0 %
+Citeseer| Acc: 73.6 %
+Pubmed  | Acc: 80.6 %
+Reddit  | F1:  95.3 %
 
 This home repo contains the implementation for citation networks (Cora, Citeseer, and Pubmed) and social network (Reddit).
 
