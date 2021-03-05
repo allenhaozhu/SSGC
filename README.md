@@ -6,7 +6,7 @@ This code is based on SGC. We will update the code in Text Classification and No
 
 SGC removes the nonlinearities and collapes the weight matrices in Graph Convolutional Networks (GCNs) and is essentially a linear model. However, it also cannot beat GCNs in most benchmarks. S^2GC is a new baseline method for GCNs and downstream applications.
 
-S^2GC achieves competitive performance while saving much training time, basically the computational cost is very close to SSGC.
+S^2GC achieves competitive performance while saving much training time, basically the computational cost is very close to SGC.
 
 Dataset | Metric |
 :------:|:------:|
