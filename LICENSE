@@ -1,1 +1,70 @@
 Our code license follows mostly the fair use regulations making it available for the academic non-commercial use only. The license assumes royalty-free, non-exclusive, non-transferable, attribution, 'no derivatives' rights. Please read carefully the license.
+
+Code Licence
+
+1. Terminology
+
+'Data' means the data and other information (in whatever form or manner it is expressed) made available to you under this licence as at the date it is accessed by you, but does not include any inventions, patents, design rights or trademarks of CSIRO or any other person or any computer programs used in the making or operation of a database.
+
+'Authors' mean Dr. P. Koniusz and Dr. R. Zhang.
+
+'You/User' means you as Data user.
+
+'Acknowledgement' means that if you use the Data, you must give credits to the Authors and cite the source of the Data.
+
+'No derivatives' means that if you remix, transform, edit, or build upon the Data in any way, you may not distribute the modified material.
+
+"Authors' Employers" means the Authors' past/current/future employers/organisations.
+
+2. Grant of licence
+
+2.1 Authors grant you a royalty-free, non-exclusive, non-transferable, attribution, 'No derivatives' licence to use the Data solely for your non commercial purposes. For the purposes of this licence, 'commercial purpose' means to sell, hire, exchange or otherwise use or exploit the Data (whether in its original or any adapted form, or incorporated in or used in the provision of any products or services) for profit or gain.
+
+2.2 The rights granted under this licence are personal to the User and are not sub-licensable or capable of assignment. You may not distribute the Data to any other person (see Exceptions in Section 6) nor attempt to obtain patent coverage on or assert any other intellectual property rights over the Data. Notwithstanding the foregoing, you may not create or distribute digital or hardcopy products or non-editable digital images (eg: pdf files) based on or containing the Data (see Exceptions in Section 6).
+
+2.3 You must comply with any protocols concerning the attribution of rights in the Data. However, without limiting the obligation that the Data be used for non-commercial purposes only, you must not represent that Authors or 'Authors' Employers' take responsibility for the accuracy or correctness of the Data or any output of any application of the Data (including any prediction or the output of any modelling), or that Authors (or 'Authors' Employers') support or endorse your use of the Data or any products derived or conclusions or predictions drawn from the Data.
+
+Where you breach a term of this licence it terminates immediately.
+3. Disclaimer/No warranties
+
+3.1 You acknowledge that the Data may have inherent defects or deficiencies and that any use you make of it is at your own risk. To the maximum extent permitted by law, the Data is provided 'as is' and Authors make no express or implied representation or warranty concerning the fitness for any purpose, accuracy, currency and reliability of the Data, nor that its use will not infringe any third party rights. Any use and/or interpretation of the Data is done so entirely at the User's own risk and you accept all risk and responsibility for any losses, damages, costs and other consequences arising from use of the Data or any defect in the Data.
+
+3.2 If you are a consumer under the Australian Consumer Law, certain guarantees and rights may be conferred on you which cannot be excluded, restricted or modified.  If so, then to the maximum extent permitted by law, you agree that Authors' (and 'Authors' Employers') liability under those or any similarly non-excludable guarantees, warranties or rights is limited, at Authors' (and 'Authors' Employers') option, to resupply of the relevant goods or resupply of the relevant services, or the payment of the cost of resupplying the relevant goods or services.
+
+4. Indemnity
+
+You indemnify and release Authors (and 'Authors' Employers') against any and all claims, demands, suits, liability, loss or expense arising directly or indirectly from:
+
+(a) your use of the code;
+
+(b) third party use of any code or other products and creations derived from the code; and
+
+(c) any breach of this Agreement by you.
+
+5. General
+
+5.1 Entire Agreement. This licence constitutes the entire agreement between us. Authors (and 'Authors' Employers') are not bound by any additional provisions that may appear in any communication from you.
+
+5.2 Variations to be in writing. This licence may not be varied except in writing between us.
+
+5.3 Governing Law. This licence will be governed by the laws in force in the Australian Capital Territory, Australia.
+
+5.5 Authority. Where you enter this licence on behalf of an entity or organisation, you warrant that you have authority to do so.
+
+5.6 Disputes. If there is a dispute between us that cannot be resolved then the matter must be referred to the Australian Commercial Disputes Centre for arbitration in accordance with the Centre's Guidelines on Arbitration. The decision of the arbitrator (including any award as to costs) will be final and binding.
+
+6. Exceptions, Additional Clauses, and Guidelines
+
+6.1 The User acknowledges that the code may contain material that is subject to copyright owned or controlled by third parties. As such, the User agrees to use the code at the User's own risk and for non-commercial research purposes only.
+ 
+6.2 The User may share code with others members of a scientific research project team for the sole purpose of collaborating on the scientific research project. For clarity, this will not constitute 're-distribution' and each member accessing the code will constitute a 'User' bound by the terms and conditions of this code licence.
+ 
+6.2 The User may publish a small proportion of the code (a maximum of 20 images) in scientific publications for the sole purpose of demonstrating the manner in which the User has utilised the code in the User's scientific research, and provided the User does not derive any monetary benefit from the scientific publication. The User acknowledges that when choosing and publishing code under this clause, the User must not publish code containing material that is subject to copyright owned or controlled by a third party.
+ 
+6.3 The User may modify the code for the User's private research and study (including for use in the User's scientific research). The User acknowledges the User must not publish such modifications.  The User may agree further rights to the code with the Authors, but acknowledges that the Authors will grant such rights at their complete discretion.
+ 
+6.4 The User agrees to provide Acknowledgement to the Authors in any work that results from the use of the code. Acknowledgment can be made by citing the Authors' relevant scientific publication(s) (as indicated on the website where the code is made available to the User).
+ 
+6.5 The Authors reserve the right to terminate the User's access to the code at any time.
+
+
