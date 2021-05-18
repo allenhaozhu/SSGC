@@ -96,7 +96,7 @@ def sgc_precompute(features, adj, degree, alpha):
     emb = alpha * features
     for i in range(degree):
         features = torch.spmm(adj, features)
-        emb = emb + features/degree
+        emb = emb + (1-alpha)*features/degree
     precompute_time = perf_counter()-t
     return emb, precompute_time
 
