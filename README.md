@@ -32,3 +32,9 @@ $ python citation_citeseer.py
 $ python citation_pubmed.py 
 ```
 
+
+### Other Implementations
+Other implementations can be found in the follwing libraries. The performance may be different due to different hyper-parameter settings:
+
+- *tf_geometric*: [example](https://github.com/CrawlScript/tf_geometric/blob/master/demo/demo_ssgc.py)
+
