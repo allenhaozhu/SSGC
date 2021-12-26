@@ -1,19 +1,20 @@
-# TextS<sup>2</sup>GC
+# TextSGC
 
-Implementation of S<sup>2</sup>GC for text classification following
-([Simplifying Graph Convolutional Networks](https://arxiv.org/abs/1902.07153) and [Graph Convolutional Networks for Text Classification](https://arxiv.org/abs/1809.05679)).
+Implementation of SGC for text classification following
+([Graph Convolutional Networks for Text Classification](https://arxiv.org/abs/1809.05679)).
 Code modified from the original repo of
-SGC(https://github.com/Tiiiger/SGC).
+Text-GCN(https://github.com/yao8839836/text_gcn) and the pytorch implementation
+of GCN (https://github.com/tkipf/pygcn).
 
 For reference, 
 
-Dataset | Accuracy 
-:------:|:------:|
-20NG    | 88.6 %         
-R8      | 97.4 %          
-R52     | 94.5 %          
-Ohsumed | 68.5 %         
-MR      | 76.7 % 
+Dataset | Accuracy | Training Time 
+:------:|:------:|:-----------:|
+20NG    | 88.5 %          | 19.06s
+R8      | 97.2 %          | 1.90s
+R52     | 94.0 %          | 3.01s
+Ohsumed | 68.5 %          | 3.02s
+MR      | 75.9 %          | 4.00s
 ## Data
 
 We get the data from [original repo](https://github.com/yao8839836/text_gcn) and
