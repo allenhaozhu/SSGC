@@ -1,6 +1,6 @@
-# TextSSGC
+# TextS<sup>2</sup>GC
 
-Implementation of SSGC for text classification following
+Implementation of S<sup>2</sup>GC for text classification following
 ([Simplifying Graph Convolutional Networks](https://arxiv.org/abs/1902.07153) and [Graph Convolutional Networks for Text Classification](https://arxiv.org/abs/1809.05679)).
 Code modified from the original repo of
 SGC(https://github.com/Tiiiger/SGC).
