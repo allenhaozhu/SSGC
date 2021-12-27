@@ -8,13 +8,13 @@ of GCN (https://github.com/tkipf/pygcn).
 
 For reference, 
 
-Dataset | Accuracy | Training Time 
-:------:|:------:|:-----------:|
-20NG    | 88.5 %          | 19.06s
-R8      | 97.2 %          | 1.90s
-R52     | 94.0 %          | 3.01s
-Ohsumed | 68.5 %          | 3.02s
-MR      | 75.9 %          | 4.00s
+Dataset | Accuracy |
+:------:|:------:|
+20NG    | 88.6 %          
+R8      | 97.5 %          
+R52     | 94.5 %          
+Ohsumed | 68.5 %          
+MR      | 76.7 %          
 ## Data
 
 We get the data from [original repo](https://github.com/yao8839836/text_gcn) and
