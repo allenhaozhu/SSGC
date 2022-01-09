@@ -54,8 +54,8 @@ def train_regression(model,
         with torch.no_grad():
             model.eval()
             output = model(val_features)
-            acc_val = accuracy(output, val_labels)
-            loss_val = F.cross_entropy(output, val_labels)
+            acc_val = accuracy(output, val_labels).item()
+            loss_val = F.cross_entropy(output, val_labels).item()
             if best_acc_val < acc_val:
                  best_acc_val = acc_val
             #     best_model = model
