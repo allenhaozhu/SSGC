@@ -54,8 +54,8 @@ def train_regression(model,
         with torch.no_grad():
             model.eval()
             output = model(val_features)
-            acc_val = accuracy(output, val_labels)
-            loss_val = F.cross_entropy(output, val_labels)
+            acc_val = accuracy(output, val_labels).item()
+            loss_val = F.cross_entropy(output, val_labels).item()
             if best_acc_val < acc_val:
                  best_acc_val = acc_val
             #     best_model = model
@@ -75,10 +75,19 @@ def test_regression(model, test_features, test_labels):
     model.eval()
     return accuracy(model(test_features), test_labels)
 
-if args.model == "SGC":
-    model, acc_val, train_time = train_regression(model, features[idx_train], labels[idx_train], features[idx_val], labels[idx_val],
-                     args.epochs, args.weight_decay, args.lr, args.dropout)
-    acc_test = test_regression(model, features[idx_test], labels[idx_test])
+acc_tests = []
+acc_vals = []
+for _ in range(args.repeats):
+    model.reset_parameters()
+    if args.model == "SGC":
+        model, acc_val, train_time = train_regression(model, features[idx_train], labels[idx_train], features[idx_val], labels[idx_val],
+                        args.epochs, args.weight_decay, args.lr, args.dropout)
+        acc_test = test_regression(model, features[idx_test], labels[idx_test]).item()
+        acc_tests.append(acc_test)
+        acc_vals.append(acc_val)
+    print("Validation Accuracy: {:.4f} Test Accuracy: {:.4f}".format(acc_val, acc_test))
+    print("Pre-compute time: {:.4f}s, train time: {:.4f}s, total: {:.4f}s".format(precompute_time, train_time, precompute_time+train_time))
 
-print("Validation Accuracy: {:.4f} Test Accuracy: {:.4f}".format(acc_val, acc_test))
-print("Pre-compute time: {:.4f}s, train time: {:.4f}s, total: {:.4f}s".format(precompute_time, train_time, precompute_time+train_time))
+print("Overall")
+print(f"test_acc = {np.mean(acc_tests):.4f} +- {np.std(acc_tests):.4f}")
+print(f"val_acc  = {np.mean(acc_vals):.4f} +- {np.std(acc_vals):.4f}")

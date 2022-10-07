@@ -10,6 +10,8 @@ def get_citation_args():
                         help='Number of epochs to train.')
     parser.add_argument('--lr', type=float, default=0.2,
                         help='Initial learning rate.')
+    parser.add_argument('--alpha', type=float, default=0.05,
+                        help='alpha.')
     parser.add_argument('--weight_decay', type=float, default=5e-6,
                         help='Weight decay (L2 loss on parameters).')
     parser.add_argument('--hidden', type=int, default=0,

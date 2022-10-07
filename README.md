@@ -32,3 +32,29 @@ $ python citation_citeseer.py
 $ python citation_pubmed.py 
 ```
 
+## Reproductions
+
+There is no seed control for tuning, so these will be different each run.
+
+```bash
+python tuning_cora.py  # will create hyperparameter file
+# Best weight decay: 4.29e-06
+python citation_cora.py --tuned --repeats 10
+# Overall
+# test_acc = 0.8112 +- 0.0012
+# val_acc  = 0.8114 +- 0.0009
+
+python tuning_citeseer.py  # will create hyperparameter file
+# Best weight decay: 5.06e-05
+python citation_citeseer.py --tuned --repeats 10
+# Overall
+# test_acc = 0.7240 +- 0.0000
+# val_acc  = 0.7460 +- 0.0000
+
+python tuning_pubmed.py  # will create hyperparameter file
+# Best weight decay: 1.98e-09
+python citation_pubmed.py --tuned --repeats 10
+# Overall
+# test_acc = 0.7871 +- 0.0009
+# val_acc  = 0.8084 +- 0.0022
+```

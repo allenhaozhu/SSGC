@@ -21,7 +21,7 @@ set_seed(args.seed, args.cuda)
 space = {'weight_decay' : hp.loguniform('weight_decay', log(1e-10), log(1e-4))}
 
 adj, features, labels, idx_train, idx_val, idx_test = load_citation(args.dataset, args.normalization, args.cuda)
-if args.model == "SGC": features, precompute_time = sgc_precompute(features, adj, args.degree)
+if args.model == "SGC": features, precompute_time = sgc_precompute(features, adj, args.degree, args.alpha)
 
 def sgc_objective(space):
     model = get_model(args.model, features.size(1), labels.max().item()+1, args.hidden, args.dropout, args.cuda)

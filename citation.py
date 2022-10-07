@@ -25,11 +25,11 @@ if args.tuned:
 # setting random seeds
 set_seed(args.seed, args.cuda)
 
-adj, features, labels, idx_train, idx_val, idx_test, dRoot = load_citation(args.dataset, args.normalization, args.cuda)
+adj, features, labels, idx_train, idx_val, idx_test = load_citation(args.dataset, args.normalization, args.cuda)
 
 model = get_model(args.model, features.size(1), labels.max().item()+1, args.hidden, args.dropout, args.cuda)
 
-if args.model == "SGC": features, precompute_time = sgc_precompute(features, adj, args.degree)
+if args.model == "SGC": features, precompute_time = sgc_precompute(features, adj, args.degree, args.alpha)
 print("{:.4f}s".format(precompute_time))
 
 def train_regression(model,
@@ -53,7 +53,7 @@ def train_regression(model,
         with torch.no_grad():
             model.eval()
             output = model(val_features)
-            acc_val = accuracy(output, val_labels)
+            acc_val = accuracy(output, val_labels).item()
             if best_acc_val < acc_val:
                 best_acc_val = acc_val
                 best_model = model

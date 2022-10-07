@@ -15,6 +15,9 @@ class SGC(nn.Module):
         self.W = nn.Linear(nfeat, nclass)
         # self.bn = nn.BatchNorm1d(nfeat)
 
+    def reset_parameters(self):
+        self.W.reset_parameters()
+
     def forward(self, x):
         return self.W(x)
 
